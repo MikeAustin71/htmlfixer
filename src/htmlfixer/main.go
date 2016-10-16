@@ -11,23 +11,23 @@ import (
 // FileReadStatus is a data structure used to track file
 // processing status.
 type FileReadStatus struct {
-	isInputFileExist	bool
-	isHTMLTag        	bool
-	isStyleTag			bool
-	isBodyTag        	bool
-	inputFile        	FileData
-	tempFile         	FileData
+	isInputFileExist bool
+	isHTMLTag        bool
+	isStyleTag       bool
+	isBodyTag        bool
+	inputFile        FileData
+	tempFile         FileData
 }
 
 // FileData is used to track file characteristics
 type FileData struct {
-	absPathAndFileName 	string
-	dir                	string
-	fileNameAndExt     	string
-	ext                	string
-	fileName        	string
-	volume				string
-	fileSize           	int64
+	absPathAndFileName string
+	dir                string
+	fileNameAndExt     string
+	ext                string
+	fileName           string
+	volume             string
+	fileSize           int64
 }
 
 func main() {
@@ -49,7 +49,7 @@ func main() {
 	for scanner.Scan() {
 
 		filePathNameLine := scanner.Text()
-		filePathNameLine = strings.Trim(filePathNameLine," ")
+		filePathNameLine = strings.Trim(filePathNameLine, " ")
 
 		if filePathNameLine == "" {
 			continue
@@ -75,13 +75,13 @@ func NewFileStatusInfo(filePathName string) FileReadStatus {
 	fPath, err := filepath.Abs(filePathName)
 
 	if err != nil {
-		fmt.Println("NewFileStatusInfo(): Error filePathName =", filePathName )
+		fmt.Println("NewFileStatusInfo(): Error filePathName =", filePathName)
 		panic(err)
 	}
 
-	var status = FileReadStatus {
-		isBodyTag: false,
-		isHTMLTag: false,
+	var status = FileReadStatus{
+		isBodyTag:  false,
+		isHTMLTag:  false,
 		isStyleTag: false,
 	}
 
@@ -108,7 +108,6 @@ func NewFileStatusInfo(filePathName string) FileReadStatus {
 }
 
 func processHTMLFile(fInfo *FileReadStatus) {
-
 
 	inFile, err := os.Open(fInfo.inputFile.absPathAndFileName)
 
@@ -142,11 +141,11 @@ func processHTMLFile(fInfo *FileReadStatus) {
 			fInfo.isStyleTag = true
 		}
 
-		if strings.Contains(str, "</style>"){
+		if strings.Contains(str, "</style>") {
 			fInfo.isStyleTag = false
 		}
 
-		if strings.Contains(str, "<html>"){
+		if strings.Contains(str, "<html>") {
 			fInfo.isHTMLTag = true
 		}
 
@@ -162,24 +161,48 @@ func processHTMLFile(fInfo *FileReadStatus) {
 			fInfo.isBodyTag = false
 		}
 
-		if fInfo.isStyleTag && strings.Contains(str, "mso-style-"){
-			continue
+		if fInfo.isStyleTag && strings.Contains(str, "mso-style-") {
+
+			if strings.Contains(str, "{") && strings.Contains(str, "}") {
+				str = "{}"
+
+			} else if strings.Contains(str, "{") {
+				str = "{"
+
+			} else {
+				continue
+			}
 		}
 
-		if strings.Contains(str, "windowtext"){
-			str = strings.Replace(str,"windowtext", "black", -1)
+		if strings.Contains(str, "windowtext") {
+			str = strings.Replace(str, "windowtext", "black", -1)
 		}
 
-		if fInfo.isBodyTag && strings.Contains(str, "name=\"_"){
-			str = strings.Replace(str,"name=\"_", "id=\"a_", -1)
+		if fInfo.isBodyTag && strings.Contains(str, "name=\"_") {
+			str = strings.Replace(str, "name=\"_", "id=\"a_", -1)
 		}
 
-		if fInfo.isBodyTag && strings.Contains(str, "#_"){
-			str = strings.Replace(str,"#_", "#a_", -1)
+		if fInfo.isBodyTag && strings.Contains(str, "#_") {
+			str = strings.Replace(str, "#_", "#a_", -1)
 		}
 
 		fmt.Fprintln(writer, str)
 	}
 
 	writer.Flush()
+
+	inFile.Close()
+	outFile.Close()
+
+	err = os.Remove(fInfo.inputFile.absPathAndFileName)
+
+	if err != nil {
+		fmt.Println("Failed to delete ", fInfo.inputFile.absPathAndFileName)
+		return
+	}
+
+	_ = os.Rename(fInfo.tempFile.absPathAndFileName,
+		fInfo.inputFile.absPathAndFileName)
+
+	fmt.Println("Process File:", fInfo.inputFile.fileNameAndExt)
 }

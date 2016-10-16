@@ -1,1 +1,2 @@
-D:/go/work/src/github.com/htmlfixer/src/htmlfixer/006870_ReadingFiles.htm
+D:\GolangNotes\008_GoOperations\006800_FileOperations\006870_ReadingFiles\006870_ReadingFiles.htm
+D:\GolangNotes\008_GoOperations\006800_FileOperations\006890_WritingFiles\006890_WritingFiles.htm

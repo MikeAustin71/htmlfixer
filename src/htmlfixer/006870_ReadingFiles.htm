@@ -28,17 +28,17 @@
 	{font-family:Verdana;
 	panose-1:2 11 6 4 3 5 4 4 2 4;}
 @font-face
-	{font-family:"Trebuchet MS";
-	panose-1:2 11 6 3 2 2 2 2 2 4;}
-@font-face
-	{font-family:"Bookman Old Style";
-	panose-1:2 5 6 4 5 5 5 2 2 4;}
-@font-face
 	{font-family:Consolas;
 	panose-1:2 11 6 9 2 2 4 3 2 4;}
 @font-face
 	{font-family:"Franklin Gothic Heavy";
 	panose-1:2 11 9 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Bookman Old Style";
+	panose-1:2 5 6 4 5 5 5 2 2 4;}
 @font-face
 	{font-family:"Bernard MT Condensed";
 	panose-1:2 5 8 6 6 9 5 2 4 4;}
@@ -2559,86 +2559,99 @@ ul
 
 <div class=WordSection1>
 
-<h1><a name="_Toc460530871"></a><a name="_Toc460185409"></a><a
-name="_Toc458976738"></a><a name="_Toc458969555"></a><a name="_Toc454542365"></a><a
-name="_Toc450824631"></a><a name="_Toc450478536">Reading Files in Golang</a></h1>
+<h1><a name="_Toc464381460"></a><a name="_Toc460530871"></a><a
+name="_Toc460185409"></a><a name="_Toc458976738"></a><a name="_Toc458969555"></a><a
+name="_Toc454542365"></a><a name="_Toc450824631"></a><a name="_Toc450478536">Reading
+Files in Golang</a></h1>
 
 <h2><a name="_Toc454542366"></a><a name="_Toc450824632"></a><a
-name="_Toc450478537"></a><a name="_Toc460530872"></a><a name="_Toc460185410"></a><a
-name="_Toc458976739"></a><a name="_Toc458969556"></a><a name="_Toc454542368">Table
-of Contents</a></h2>
+name="_Toc450478537"></a><a name="_Toc464381461"></a><a name="_Toc460530872"></a><a
+name="_Toc460185410"></a><a name="_Toc458976739"></a><a name="_Toc458969556"></a><a
+name="_Toc454542368">Table of Contents</a></h2>
 
-<p class=MsoToc1><a href="#_Toc460530871">Reading Files in Golang<span
+<p class=MsoToc1><a href="#_Toc464381460">Reading Files in Golang<span
 style='color:#252519;display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>1</span></a></p>
 
-<p class=MsoToc2><a href="#_Toc460530872">Table of Contents<span
+<p class=MsoToc2><a href="#_Toc464381461">Table of Contents<span
 style='color:#252519;display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>1</span></a></p>
 
-<p class=MsoToc2><a href="#_Toc460530873">Resources<span style='color:#252519;
+<p class=MsoToc2><a href="#_Toc464381462">Resources<span style='color:#252519;
 display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>2</span></a></p>
 
-<p class=MsoToc3><a href="#_Toc460530874">Video<span style='color:#252519;
+<p class=MsoToc3><a href="#_Toc464381463">Video<span style='color:#252519;
 display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>2</span></a></p>
 
-<p class=MsoToc3><a href="#_Toc460530875">Articles<span style='color:#252519;
+<p class=MsoToc3><a href="#_Toc464381464">Articles<span style='color:#252519;
 display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>2</span></a></p>
 
-<p class=MsoToc3><a href="#_Toc460530876">Books<span style='color:#252519;
+<p class=MsoToc3><a href="#_Toc464381465">Books<span style='color:#252519;
 display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>4</span></a></p>
 
-<p class=MsoToc2><a href="#_Toc460530877">Key Points<span style='color:#252519;
+<p class=MsoToc2><a href="#_Toc464381466">Key Points<span style='color:#252519;
 display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>5</span></a></p>
 
-<p class=MsoToc2><a href="#_Toc460530878">Example 1 - Reading Files<span
+<p class=MsoToc2><a href="#_Toc464381467">Example 1 - Reading Files<span
 style='color:#252519;display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>6</span></a></p>
 
-<p class=MsoToc3><a href="#_Toc460530879">ioutil<span style='color:#252519;
+<p class=MsoToc3><a href="#_Toc464381468">ioutil<span style='color:#252519;
 display:none;text-decoration:none'> </span><span
 style='color:#252519;display:none;text-decoration:none'>6</span></a></p>
 
-<p class=MsoToc3><a href="#_Toc460530880">`os` Package Open, Seek and Read<span
+<p class=MsoToc3><a href="#_Toc464381469">`os` Package Open, Seek and Read<span
 style='color:#252519;display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>8</span></a></p>
 
-<p class=MsoToc3><a href="#_Toc460530881">`io` Package – ReadAtLeast<span
+<p class=MsoToc3><a href="#_Toc464381470">`io` Package – ReadAtLeast<span
 style='color:#252519;display:none;text-decoration:none'> </span><span
 style='color:#252519;display:none;text-decoration:none'>10</span></a></p>
 
-<p class=MsoToc3><a href="#_Toc460530882">`bufio` Package – NewReader and Peek<span
+<p class=MsoToc3><a href="#_Toc464381471">`bufio` Package – NewReader and Peek<span
 style='color:#252519;display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>11</span></a></p>
 
-<p class=MsoToc2><a href="#_Toc460530883">Socket Loop New Reader Examples<span
+<p class=MsoToc2><a href="#_Toc464381472">Socket Loop New Reader Examples<span
 style='color:#252519;display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>12</span></a></p>
 
-<p class=MsoToc3><a href="#_Toc460530884">Bz2 NewReader Example<span
+<p class=MsoToc3><a href="#_Toc464381473">Bz2 NewReader Example<span
 style='color:#252519;display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>12</span></a></p>
 
-<p class=MsoToc3><a href="#_Toc460530885">convert-cast-bytes-buffer-or-bytes-newbuffer-type-to-io-reader<span
+<p class=MsoToc3><a href="#_Toc464381474">convert-cast-bytes-buffer-or-bytes-newbuffer-type-to-io-reader<span
 style='color:#252519;display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>14</span></a></p>
 
-<p class=MsoToc4><a href="#_Toc460530886">cast-bytes-buffer - 1<span
+<p class=MsoToc4><a href="#_Toc464381475">cast-bytes-buffer - 1<span
 style='color:#252519;display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>15</span></a></p>
 
-<p class=MsoToc4><a href="#_Toc460530887">cast-bytes-buffer – 2<span
+<p class=MsoToc4><a href="#_Toc464381476">cast-bytes-buffer – 2<span
 style='color:#252519;display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>16</span></a></p>
 
-<p class=MsoToc3><a href="#_Toc460530888">New Reader Example<span
+<p class=MsoToc3><a href="#_Toc464381477">New Reader Example<span
 style='color:#252519;display:none;text-decoration:none'>. </span><span
 style='color:#252519;display:none;text-decoration:none'>17</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc464381478">Read Text File Line by Line<span
+style='color:#252519;display:none;text-decoration:none'>. </span><span
+style='color:#252519;display:none;text-decoration:none'>18</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc464381479">Scanner Example<span
+style='color:#252519;display:none;text-decoration:none'>. </span><span
+style='color:#252519;display:none;text-decoration:none'>18</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc464381480">ReadString Example<span
+style='color:#252519;display:none;text-decoration:none'>. </span><span
+style='color:#252519;display:none;text-decoration:none'>21</span></a></p>
 
 <p class=MsoNormal>&nbsp;</p>
 
@@ -2646,11 +2659,12 @@ style='color:#252519;display:none;text-decoration:none'>17</span></a></p>
 color:#833C0B'><br clear=all style='page-break-before:always'>
 </span>
 
-<h2><a name="_Toc460530873"></a><a name="_Toc460185411"></a><a
-name="_Toc458976740"></a><a name="_Toc458969557">Resources</a></h2>
+<h2><a name="_Toc464381462"></a><a name="_Toc460530873"></a><a
+name="_Toc460185411"></a><a name="_Toc458976740"></a><a name="_Toc458969557">Resources</a></h2>
 
-<h3><a name="_Toc460530874"></a><a name="_Toc460185412"></a><a
-name="_Toc458976741"></a><a name="_Toc458969558"><span lang=EN>Video</span></a></h3>
+<h3><a name="_Toc464381463"></a><a name="_Toc460530874"></a><a
+name="_Toc460185412"></a><a name="_Toc458976741"></a><a name="_Toc458969558"><span
+lang=EN>Video</span></a></h3>
 
 <p class=Bullet0List><span class=MsoHyperlink><span lang=EN style='font-family:
 Symbol;text-decoration:none'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -2706,7 +2720,7 @@ Symbol;text-decoration:none'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&
 </span></span></span></a><a href="https://www.youtube.com/watch?v=7QDVRowyUQA"><span
 lang=EN>Google Developers – YouTube - I/O BootCamp 2011: Real World Go</span></a></p>
 
-<h3><a name="_Toc460530875"><span lang=EN>Articles</span></a></h3>
+<h3><a name="_Toc464381464"></a><a name="_Toc460530875"><span lang=EN>Articles</span></a></h3>
 
 <p class=Bullet0List><span class=MsoHyperlink><span lang=EN style='font-family:
 Symbol;text-decoration:none'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -2742,8 +2756,7 @@ bufio</a></span></p>
 <p class=Bullet0List><span class=MsoHyperlink><span lang=EN style='font-family:
 Symbol;text-decoration:none'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><span lang=EN><a
-href="http://www.devdungeon.com/content/working-files-go">devdungeon.com
-working-with-files-go</a></span></p>
+href="http://www.devdungeon.com/content/working-files-go">devdungeon.com working-with-files-go</a></span></p>
 
 <span class=MsoHyperlink><span lang=EN style='font-size:16.0pt;line-height:
 107%;font-family:"Arial Rounded MT Bold",sans-serif'><br clear=all
@@ -2781,9 +2794,9 @@ Overflow - How to read/write from/to file?</a></span></p>
 
 <p class=Bullet0List><span class=MsoHyperlink><span lang=EN style='font-family:
 Symbol;text-decoration:none'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><span class=MsoHyperlink><span lang=EN><a
+</span></span></span><span lang=EN><a
 href="http://stackoverflow.com/questions/40035635/read-line-in-golang">Stack
-Overflow - Read line in golang</a></span></span></p>
+Overflow - Read line in golang</a></span></p>
 
 <p class=Bullet0List><span class=MsoHyperlink><span lang=EN style='font-family:
 Symbol;text-decoration:none'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -2941,8 +2954,14 @@ Symbol;text-decoration:none'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&
 href="http://openmymind.net/Your-Buffer-Is-Leaking/">Open My Mind – Karl Seguin
 - Your Buffer Is Leaking</a></span></p>
 
-<h3><a name="_Toc460530876"></a><a name="_Toc460508848"></a><a
-name="_Toc460508801"><span lang=EN>Books</span></a></h3>
+<p class=Bullet0List><span class=MsoHyperlink><span lang=EN style='font-family:
+Symbol;text-decoration:none'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span lang=EN><a
+href="https://gist.github.com/kendellfab/7417164">kendellfab/read_line.go –
+GitHubGist - Golang --&gt; Read file line by line</a></span></p>
+
+<h3><a name="_Toc464381465"></a><a name="_Toc460530876"></a><a
+name="_Toc460508848"></a><a name="_Toc460508801"><span lang=EN>Books</span></a></h3>
 
 <p class=Bullet0List><span class=MsoHyperlink><span lang=EN style='font-family:
 Symbol;text-decoration:none'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -2961,8 +2980,9 @@ color:#833C0B'><br clear=all style='page-break-before:always'>
 </span>
 
 <h2><a name="_Toc454542367"></a><a name="_Toc450824633"></a><a
-name="_Toc450478538"></a><a name="_Toc460530877"></a><a name="_Toc460185414"></a><a
-name="_Toc458976743"></a><a name="_Toc458969560">Key Points</a></h2>
+name="_Toc450478538"></a><a name="_Toc464381466"></a><a name="_Toc460530877"></a><a
+name="_Toc460185414"></a><a name="_Toc458976743"></a><a name="_Toc458969560">Key
+Points</a></h2>
 
 <p class=Bullet0BigList><span lang=EN style='font-family:Symbol'>·<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -2989,20 +3009,23 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 color:#833C0B'><br clear=all style='page-break-before:always'>
 </span>
 
-<h2><a name="_Toc460530878"></a><a name="_Toc460185415"></a><a
-name="_Toc458976744"></a><a name="_Toc458969561"></a><a name="_Toc454542369"></a><a
-name="_Toc450824634"></a><a name="_Toc450478539">Example 1 - Reading Files</a></h2>
+<h2><a name="_Toc464381467"></a><a name="_Toc460530878"></a><a
+name="_Toc460185415"></a><a name="_Toc458976744"></a><a name="_Toc458969561"></a><a
+name="_Toc454542369"></a><a name="_Toc450824634"></a><a name="_Toc450478539">Example
+1 - Reading Files</a></h2>
 
-<h3><a name="_Toc460530879"></a><a name="_Toc460185416"></a><a
-name="_Toc458976745"></a><a name="_Toc458969562"></a><a name="_Toc454542370"></a><a
-name="_Toc450824635"></a><a name="_Toc450478540"><span lang=EN>ioutil</span></a></h3>
+<p class=Normal4Verd><a href="https://gobyexample.com/reading-files"><span
+class=HyperlinkBI>Go by Example – Reading Files</span></a></p>
+
+<h3><a name="_Toc464381468"></a><a name="_Toc460530879"></a><a
+name="_Toc460185416"></a><a name="_Toc458976745"></a><a name="_Toc458969562"></a><a
+name="_Toc454542370"></a><a name="_Toc450824635"></a><a name="_Toc450478540"><span
+lang=EN>ioutil</span></a></h3>
 
 <p class=Normal4Verd><a href="https://golang.org/pkg/io/ioutil/"><span
 class=HyperlinkBI>package iotuil</span></a></p>
 
 <p class=Code7><span style='border:none'><span style='border:none'>package main</span></span></p>
-
-<p class=Code7><span style='border:none'>&nbsp;</span></p>
 
 <p class=Code7><span style='border:none'><span style='border:none'>import (</span></span></p>
 
@@ -3031,8 +3054,8 @@ files requires checking most calls for errors.</span></span></p>
 <p class=Code7><span style='border:none'><span style='border:none'>// This
 helper will streamline our error checks below.</span></span></p>
 
-<p class=Code7><span style='border:none'><span style='border:none'>func check(e
-erro<span style='border:none'>r) {</span></span></span></p>
+<p class=Code7><span style='border:none'><span style='border:none'>func <span
+style='border:none'>check(e error) {</span></span></span></p>
 
 <p class=Code7><span style='border:none'>   </span><span style='border:none'><span
 style='border:none'>if e != nil {</span></span></p>
@@ -3044,8 +3067,6 @@ style='border:none'>panic(e)</span></span></p>
 style='border:none'>}</span></span></p>
 
 <p class=Code7><span style='border:none'><span style='border:none'>}</span></span></p>
-
-<p class=Code7><span style='border:none'>&nbsp;</span></p>
 
 <span style='font-size:18.0pt;line-height:150%;font-family:"Verdana",sans-serif;
 color:darkblue;background:#EEEEEE'><br clear=all style='page-break-before:always'>
@@ -3076,10 +3097,10 @@ style='border:none'>fmt.Print(string(dat))</span></span></p>
 color:#1F4D78'><br clear=all style='page-break-before:always'>
 </span>
 
-<h3><a name="_Toc460530880"></a><a name="_Toc460185417"></a><a
-name="_Toc458976746"></a><a name="_Toc458969563"></a><a name="_Toc454542371"></a><a
-name="_Toc450824636"></a><a name="_Toc450478541"><span lang=EN>`os` Package Open,
-Seek and Read</span></a></h3>
+<h3><a name="_Toc464381469"></a><a name="_Toc460530880"></a><a
+name="_Toc460185417"></a><a name="_Toc458976746"></a><a name="_Toc458969563"></a><a
+name="_Toc454542371"></a><a name="_Toc450824636"></a><a name="_Toc450478541"><span
+lang=EN>`os` Package Open, Seek and Read</span></a></h3>
 
 <p class=Normal4Verd><a href="https://golang.org/pkg/os/#Open"><span
 class=HyperlinkBI>os Package - Open</span></a></p>
@@ -3090,8 +3111,8 @@ class=HyperlinkBI>os Package - File.Seek</span></a></p>
 <p class=Normal4Verd><a href="https://golang.org/pkg/os/#File.Read"><span
 class=HyperlinkBI>os Package - File.Read</span></a></p>
 
-<p class=Code7><span style='border:none'><span style='border:none'>// You'll
-ofte<span style='border:none'>n want more control over how and what</span></span></span></p>
+<p class=Code7><span style='border:none'><span style='border:none'>// <span
+style='border:none'>You'll often want more control over how and what</span></span></span></p>
 
 <p class=Code7><span style='border:none'><span style='border:none'>// parts of
 a file are read. For these tasks, start</span></span></p>
@@ -3109,8 +3130,8 @@ os.Open(&quot;/tmp/dat&quot;)</span></span></p>
 <p class=Code7><span style='border:none'><span style='border:none'>// Read some
 bytes from the beginning of the file.</span></span></p>
 
-<p class=Code7><span style='border:none'><span style='border:none'>// Allow up
-to 5 to <span style='border:none'>be read but also note how many</span></span></span></p>
+<p class=Code7><span style='border:none'><span style='border:none'>// Allow <span
+style='border:none'>up to 5 to be read but also note how many</span></span></span></p>
 
 <p class=Code7><span style='border:none'><span style='border:none'>// actually
 were read.</span></span></p>
@@ -3138,8 +3159,8 @@ also `Seek` to a known location in the file</span></span></p>
 <p class=Code7><span style='border:none'><span style='border:none'>// and
 `Read` from there.</span></span></p>
 
-<p class=Code7><span style='border:none'><span style='border:none'>o2, err :=
-f.Seek<span style='border:none'>(6, 0)</span></span></span></p>
+<p class=Code7><span style='border:none'><span style='border:none'>o2, err <span
+style='border:none'>:= f.Seek(6, 0)</span></span></span></p>
 
 <p class=Code7><span style='border:none'><span style='border:none'>check(err)</span></span></p>
 
@@ -3158,18 +3179,18 @@ bytes @ %d: %s\n&quot;, n2, o2, string(b2))</span></span></p>
 color:#1F4D78'><br clear=all style='page-break-before:always'>
 </span>
 
-<h3><a name="_Toc460530881"></a><a name="_Toc460185418"></a><a
-name="_Toc458976747"></a><a name="_Toc458969564"></a><a name="_Toc454542372"></a><a
-name="_Toc450824637"></a><a name="_Toc450478542"><span lang=EN>`io` Package –
-ReadAtLeast</span></a></h3>
+<h3><a name="_Toc464381470"></a><a name="_Toc460530881"></a><a
+name="_Toc460185418"></a><a name="_Toc458976747"></a><a name="_Toc458969564"></a><a
+name="_Toc454542372"></a><a name="_Toc450824637"></a><a name="_Toc450478542"><span
+lang=EN>`io` Package – ReadAtLeast</span></a></h3>
 
 <p class=Normal4Verd><span class=HyperlinkBI><a
 href="https://golang.org/pkg/io/#ReadAtLeast">Package io - ReadAtLeast</a></span></p>
 
 <p class=Normal4Verd>&nbsp;</p>
 
-<p class=Code7><span style='border:none'><span style='border:none'>The `io`
-packag<span style='border:none'>e provides some functions that may</span></span></span></p>
+<p class=Code7><span style='border:none'><span style='border:none'>The `i<span
+style='border:none'>o` package provides some functions that may</span></span></span></p>
 
 <p class=Code7><span style='border:none'><span style='border:none'>// be
 helpful for file reading. For example, reads</span></span></p>
@@ -3189,7 +3210,7 @@ f.Seek(6, 0)</span></span></p>
 make([]byte, 2)</span></span></p>
 
 <p class=Code7><span style='color:red;border:none'><span style='border:none'>n3,
-err := io.ReadAtLeast(f, b3, 2<span style='border:none'>)</span></span></span></p>
+err := io.ReadAtLeast<span style='border:none'>(f, b3, 2)</span></span></span></p>
 
 <p class=Code7><span style='border:none'><span style='border:none'>check(err)</span></span></p>
 
@@ -3213,10 +3234,10 @@ f.Seek(0, 0)</span></span></p>
 color:#1F4D78'><br clear=all style='page-break-before:always'>
 </span>
 
-<h3><a name="_Toc460530882"></a><a name="_Toc460185419"></a><a
-name="_Toc458976748"></a><a name="_Toc458969565"></a><a name="_Toc454542373"></a><a
-name="_Toc450824638"></a><a name="_Toc450478543"><span lang=EN>`bufio` Package
-– NewReader and Peek</span></a></h3>
+<h3><a name="_Toc464381471"></a><a name="_Toc460530882"></a><a
+name="_Toc460185419"></a><a name="_Toc458976748"></a><a name="_Toc458969565"></a><a
+name="_Toc454542373"></a><a name="_Toc450824638"></a><a name="_Toc450478543"><span
+lang=EN>`bufio` Package – NewReader and Peek</span></a></h3>
 
 <p class=Normal4Verd><a href="http://golang-jp.org/pkg/bufio/#NewReader"><span
 class=HyperlinkBI>`bufio` Package - NewReader</span></a></p>
@@ -3267,15 +3288,15 @@ scheduled immediately after `Open`ing with</span></span></p>
 color:#833C0B'><br clear=all style='page-break-before:always'>
 </span>
 
-<h2 style='margin:0in;margin-bottom:.0001pt'><a name="_Toc460530883"></a><a
-name="_Toc460185420"></a><a name="_Toc458976749"></a><a name="_Toc458969566"></a><a
-name="_Toc454542374"></a><a name="_Toc450824639"></a><a name="_Toc450478544">Socket
-Loop New Reader Examples</a></h2>
+<h2 style='margin:0in;margin-bottom:.0001pt'><a name="_Toc464381472"></a><a
+name="_Toc460530883"></a><a name="_Toc460185420"></a><a name="_Toc458976749"></a><a
+name="_Toc458969566"></a><a name="_Toc454542374"></a><a name="_Toc450824639"></a><a
+name="_Toc450478544">Socket Loop New Reader Examples</a></h2>
 
-<h3 style='margin:0in;margin-bottom:.0001pt'><a name="_Toc460530884"></a><a
-name="_Toc460185421"></a><a name="_Toc458976750"></a><a name="_Toc458969567"></a><a
-name="_Toc454542375"></a><a name="_Toc450824640"></a><a name="_Toc450478545"><span
-lang=EN>Bz2 NewReader Example</span></a></h3>
+<h3 style='margin:0in;margin-bottom:.0001pt'><a name="_Toc464381473"></a><a
+name="_Toc460530884"></a><a name="_Toc460185421"></a><a name="_Toc458976750"></a><a
+name="_Toc458969567"></a><a name="_Toc454542375"></a><a name="_Toc450824640"></a><a
+name="_Toc450478545"><span lang=EN>Bz2 NewReader Example</span></a></h3>
 
 <p class=Normal4Verd><a
 href="https://www.socketloop.com/references/golang-compress-bzip2-newreader-function-example"><span
@@ -3380,9 +3401,10 @@ style='border:none'>io.Copy(outputFile, bzip2reader)</span></span></p>
 color:#1F4D78'><br clear=all style='page-break-before:always'>
 </span>
 
-<h3><a name="_Toc460530885"></a><a name="_Toc460185422"></a><a
-name="_Toc458976751"></a><a name="_Toc458969568"></a><a name="_Toc454542376"></a><a
-name="_Toc450824641"></a><a name="_Toc450478546"><span lang=EN>convert-cast-bytes-buffer-or-bytes-newbuffer-type-to-io-reader</span></a></h3>
+<h3><a name="_Toc464381474"></a><a name="_Toc460530885"></a><a
+name="_Toc460185422"></a><a name="_Toc458976751"></a><a name="_Toc458969568"></a><a
+name="_Toc454542376"></a><a name="_Toc450824641"></a><a name="_Toc450478546"><span
+lang=EN>convert-cast-bytes-buffer-or-bytes-newbuffer-type-to-io-reader</span></a></h3>
 
 <p class=Normal4Verd><span lang=EN>You need to convert or type cast
 bytes.Buffer or bytes.NewBuffer type to </span><span class=EmphasizedConsolas><span
@@ -3408,8 +3430,9 @@ color:#7030A0'><br clear=all style='page-break-before:always'>
 </span>
 
 <h4><a name="_Toc454542377"></a><a name="_Toc450824642"></a><a
-name="_Toc450478547"></a><a name="_Toc460530886"></a><a name="_Toc460185423"></a><a
-name="_Toc458976752"></a><a name="_Toc458969569">cast-bytes-buffer - 1</a></h4>
+name="_Toc450478547"></a><a name="_Toc464381475"></a><a name="_Toc460530886"></a><a
+name="_Toc460185423"></a><a name="_Toc458976752"></a><a name="_Toc458969569">cast-bytes-buffer
+- 1</a></h4>
 
 <p class=Head4Code6><span lang=EN style='border:none'><span style='border:none'>package
 main</span></span></p>
@@ -3477,9 +3500,10 @@ lang=EN style='border:none'><span style='border:none'>fmt.Println(string(data))<
 color:#7030A0'><br clear=all style='page-break-before:always'>
 </span>
 
-<h4><a name="_Toc460530887"></a><a name="_Toc460185424"></a><a
-name="_Toc458976753"></a><a name="_Toc458969570"></a><a name="_Toc454542378"></a><a
-name="_Toc450824643"></a><a name="_Toc450478548">cast-bytes-buffer – 2</a></h4>
+<h4><a name="_Toc464381476"></a><a name="_Toc460530887"></a><a
+name="_Toc460185424"></a><a name="_Toc458976753"></a><a name="_Toc458969570"></a><a
+name="_Toc454542378"></a><a name="_Toc450824643"></a><a name="_Toc450478548">cast-bytes-buffer
+– 2</a></h4>
 
 <p class=Head4Code6-16><span lang=EN style='border:none'><span
 style='border:none'>package main</span></span></p>
@@ -3566,10 +3590,10 @@ style='border:none'>}</span></span></p>
 color:#1F4D78'><br clear=all style='page-break-before:always'>
 </span>
 
-<h3><a name="_Toc460530888"></a><a name="_Toc460185425"></a><a
-name="_Toc458976754"></a><a name="_Toc458969571"></a><a name="_Toc454542379"></a><a
-name="_Toc450824644"></a><a name="_Toc450478549"><span lang=EN>New Reader
-Example</span></a></h3>
+<h3><a name="_Toc464381477"></a><a name="_Toc460530888"></a><a
+name="_Toc460185425"></a><a name="_Toc458976754"></a><a name="_Toc458969571"></a><a
+name="_Toc454542379"></a><a name="_Toc450824644"></a><a name="_Toc450478549"><span
+lang=EN>New Reader Example</span></a></h3>
 
 <p class=Normal4Verd><a
 href="https://www.socketloop.com/references/golang-strings-newreader-function-example"><span
@@ -3629,6 +3653,259 @@ read : &quot;, n)</span></span></p>
 <p class=Code6><span lang=EN style='border:none'>&nbsp;</span></p>
 
 <p class=Code6><span lang=EN style='border:none'><span style='border:none'>}</span></span></p>
+
+<span style='font-size:26.0pt;line-height:107%;font-family:"Georgia",serif;
+color:#833C0B'><br clear=all style='page-break-before:always'>
+</span>
+
+<h2><a name="_Toc464381478">Read Text File Line by Line</a></h2>
+
+<h3><a name="_Toc464381479"><span lang=EN>Scanner Example</span></a></h3>
+
+<p class=Normal4Verd><a
+href="https://bitbucket.org/AmarilloMike/golangmikesamples/src/700763051da2bffde851ea8c1b8bd82c037f1016/File_I_O/03_ReadFile/01_ReadLineScanner/?at=master"><span
+class=HyperlinkBI>Source Code</span></a></p>
+
+<p class=Normal4Verd><a href="https://golang.org/pkg/bufio/"><span
+class=HyperlinkBI>Package bufio</span></a></p>
+
+<p class=Normal4Verd>This code reads a file line by line using bufio and
+'scanner'. Note that scanner will strip off the new line character when
+returning the string from scanner.Text().</p>
+
+<p class=Normal4Verd>&nbsp;</p>
+
+<p class=Code6><span style='border:none'><span style='border:none'>package main</span></span></p>
+
+<p class=Code6><span style='border:none'><span style='border:none'>import (</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>&quot;bufio&quot;</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>&quot;fmt&quot;</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>&quot;os&quot;</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>)</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<span style='font-size:18.0pt;line-height:115%;font-family:"Verdana",sans-serif;
+color:darkblue;background:#EEEEEE'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=Code6><span style='border:none'>func main() {</span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>inFile,
+err := os.Open(&quot;./TestText.txt&quot;)</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>de<span
+style='border:none'>fer inFile.Close()</span></span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>if err !=
+nil {</span></span></p>
+
+<p class=Code6><span style='border:none'>      <span style='border:none'>panic(err)</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>}</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>scanner
+:= bufio.NewScanner(inFile)</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>scanner.Split(bufio.ScanLines)</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>for
+scanner.Scan() {</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>      <span style='border:none'>line
+:= scanner.Text()</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>      <span style='border:none'>fmt.Printf(&quot;%s\n&quot;,
+line)</span></span></p>
+
+<p class=Code6><span style='border:none'>      <span style='border:none'>//
+Note the line received from scanner does</span></span></p>
+
+<p class=Code6><span style='border:none'>      <span style='border:none'>// NOT
+<span style='border:none'>contain a new line.</span></span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>}</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'><span style='border:none'>}</span></span></p>
+
+<span style='font-size:16.0pt;line-height:107%;font-family:"Verdana",sans-serif;
+color:#252519'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=Normal4Verd>Output:</p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>$ go run
+main.go</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>Line # 1
+Some Text</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>Line # 2
+Some Text</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>Line # 3
+Some Text</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>Line # 4
+Some Text</span></span></p>
+
+<span lang=EN style='font-size:24.0pt;line-height:107%;font-family:"Georgia",serif;
+color:#1F4D78'><br clear=all style='page-break-before:always'>
+</span>
+
+<h3><a name="_Toc464381480"><span lang=EN>ReadString Example</span></a></h3>
+
+<p class=Normal4Verd><a
+href="https://bitbucket.org/AmarilloMike/golangmikesamples/src/700763051da2bffde851ea8c1b8bd82c037f1016/File_I_O/03_ReadFile/02_ReadString/?at=master"><span
+class=HyperlinkBI>Source Code</span></a></p>
+
+<p class=Normal4Verd><a href="https://golang.org/pkg/bufio/"><span
+class=HyperlinkBI>Package bufio</span></a></p>
+
+<p class=Normal4Verd>This example reads a text file line by line using bufio
+and Readstring. Note that the <span class=EmphasizedConsolas><span
+style='font-size:20.0pt;line-height:107%'>'/n'</span></span> new line character
+is included in the returned string.</p>
+
+<p class=Code6><span style='border:none'><span style='border:none'>package main</span></span></p>
+
+<p class=Code6><span style='border:none'><span style='border:none'>import (</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>&quot;bufio&quot;</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>&quot;fmt&quot;</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>&quot;io&quot;</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>&quot;os&quot;</span></span></p>
+
+<p class=Code6><span style='border:none'><span style='border:none'>)</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'><span style='border:none'>func
+checkError(e error, msg string) {</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>if e !=
+nil {</span></span></p>
+
+<p class=Code6><span style='border:none'>      <span style='border:none'>fmt.Println(msg)</span></span></p>
+
+<p class=Code6><span style='border:none'>      <span style='border:none'>panic(e)</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>}</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'><span style='border:none'>}</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<span style='font-size:18.0pt;line-height:115%;font-family:"Verdana",sans-serif;
+color:darkblue;background:#EEEEEE'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=Code6><span style='border:none'><span style='border:none'>func main()
+{</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>f, err :=
+os.Open(&quot;./TestText.txt&quot;)</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>checkError(err,
+&quot;File failed to <span style='border:none'>open!&quot;)</span></span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>defer
+f.Close()</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>reader :=
+bufio.NewReader(f)</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>for {</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>      <span style='border:none'>text,
+err := reader.ReadString('\n')</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>      <span style='border:none'>if err
+!= nil &amp;&amp; err == io.EOF {</span></span></p>
+
+<p class=Code6><span style='border:none'>         <span style='border:none'>break</span></span></p>
+
+<p class=Code6><span style='border:none'>      <span style='border:none'>}</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>      <span style='border:none'>checkError(err,
+&quot;Read String Error&quot;)</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>      <span style='border:none'>fmt.Printf(&quot;%s&quot;,
+text)</span></span></p>
+
+<p class=Code6><span style='border:none'>&nbsp;</span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>}</span></span></p>
+
+<p class=Code6><span style='border:none'><span style='border:none'>}</span></span></p>
+
+<span style='font-size:16.0pt;line-height:107%;font-family:"Verdana",sans-serif;
+color:#252519'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=Normal4Verd>Output</p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>$ go run
+main.go</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>Line # 1
+Some Text</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>Line # 2
+Some Text</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>Line # 3
+Some Text</span></span></p>
+
+<p class=Code6><span style='border:none'>   <span style='border:none'>Line # 4
+Some Text</span></span></p>
 
 </div>
 
